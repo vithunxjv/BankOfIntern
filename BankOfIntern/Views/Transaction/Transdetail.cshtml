@@ -1,0 +1,91 @@
+﻿@model BankOfIntern.Models.TransDetails_Result
+
+@{
+    ViewBag.Title = "Transdetail";
+}
+@Styles.Render("~/Content/css")
+
+
+
+<div>
+    <div class="link1"> <h3>Transaction Details</h3></div>
+    <hr />
+    @{
+        string url = Url.Action("Logout", "DashBoard");
+    }
+    <input type="button" value="Logout" class="submit" onclick="window.location.href = '@url'" />
+    <div class="OT1">
+        <ul class="nav navbar-nav">
+            <li class=" @(ViewContext.RouteData.Values["Action"].ToString()=="Beneficiary"?"active":"" )">
+                @Html.ActionLink("Beneficiary", "Benifi", "Transaction", new { area = "" }, new { id = "OT1", style = "color:rgb(198,199,198);text-decoration:none;background-color: #343434;font-size:20px" })
+            </li>
+            <li class=" @(ViewContext.RouteData.Values["Action"].ToString()=="Transaction"?"active":"" )">
+                @Html.ActionLink("Transaction", "Trans", "Transaction", new { area = "" }, new { id = "OT1", style = "color:rgb(198,199,198);text-decoration:none;background-color: #343434;font-size:20px" })
+            </li>
+        </ul>
+    </div>
+    <dl class="dl-horizontal">
+        <dt>
+
+            @Html.DisplayNameFor(model => model.TransactionID)
+        </dt>
+
+        <dd>
+            @{
+                long TransId = Convert.ToInt64(Model.TransactionID);
+            }
+            @Html.DisplayFor(model => TransId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToAccNo)
+        </dt>
+
+        <dd>
+            @{
+                long Toaccno = Convert.ToInt64(Model.ToAccNo);
+            }
+            @Html.DisplayFor(model => Toaccno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransDate)
+        </dt>
+
+        <dd>
+
+            @{
+                string tdate = (Model.TransDate).ToString();
+
+            }
+            @Html.DisplayFor(model => tdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccBalance)
+        </dd>
+
+    </dl>
+</div>
+
+

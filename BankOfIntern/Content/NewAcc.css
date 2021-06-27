@@ -1,0 +1,103 @@
+
+body {
+    /* background-image: url(bbb.jpg);
+    background-size: 1900px 1200px;
+    background-repeat: no-repeat;*/
+    background-color: rgb(198,199,198);
+}
+/*section{
+        padding:0 100px;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    } */
+.box1, .box2, .box3, .box4, .box5 {
+    margin: auto;
+    max-width: 600px;
+    padding: 100px;
+    /* background: rgba(255, 255, 255, 0.349); */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    color: rgb(198,199,198);
+    font-size: 20px;
+    background-size: 24px;
+    background-color: #343434;
+}
+/*
+h1 {
+    font-size: 60px;
+    color: #343434;
+    text-align: center;
+    background-color: #343434;
+    font-family: 'Roboto', sans-serif;
+}*/
+
+/*.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #3434;
+    color: rgb(198,199,198);
+    font-size: 30px;
+}*/
+
+
+
+
+/*.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343434;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}*/
+
+
+h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(198,199,198);
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=text], input[type=number], input[type=text], input[type=date], input[type=email] {
+    /* border: 3px solid #555; */
+    background: url(../images/m.png)no-repeat 8px 9px;
+    background-size: 24px;
+    border-color: #343434;
+    border-bottom: 2px solid rgb(245, 242, 242);
+    width: 80%;
+    font-size: 14px;
+    color: rgb(243, 237, 237);
+    font-family: 'Roboto', sans-serif;
+}
+.selecttag select{
+        background-color:#343434;
+    }
+input[type=submit] {
+    background-color: rgb(198,199,198);
+    border: none;
+    color: #343434;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10%;
+    margin-right: 70%;
+}
+
+   /* input[type=submit]:hover {
+        background-color: #343434;
+    }*/
+
+
